@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+    <title>Booking</title>
+{% endblock %}
+
+{% block content %}
+    <div style="margin: 20px;">
+        <h1>Booking Confirmed!</h1>
+        <ul>
+            <li><strong>Rooms:</strong> {{ rooms }} </li>
+            <li><strong>Check-in:</strong> {{ checkin }} </li>
+            <li><strong>Check-out:</strong> {{ checkout }} </li>
+            <li><strong>Location:</strong> {{ location }} </li>
+        </ul>
+    </div>
+{% endblock %}

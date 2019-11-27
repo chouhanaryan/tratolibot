@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+    <title>Error</title>
+{% endblock %}
+
+{% block content %}
+    <div style="margin: 20px;">
+        <h2>Sorry, I could not understand your query! Please re-enter.</h2>
+        <h3>You will be redirected in 5 seconds...</h3>
+    </div>
+    <script type="text/javascript">
+        setTimeout(function() {
+            window.location.href = "/";
+        }, 5000);
+    </script>
+{% endblock %}
